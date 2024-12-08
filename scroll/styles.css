@@ -1,0 +1,9 @@
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Custom styling for the progress bar */
+.iziToast-progressbar {
+    background: #5cff33; /* Progress bar color */
+}

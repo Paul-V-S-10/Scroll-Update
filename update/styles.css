@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    margin: 0;
+    padding: 0;
+}
+
+.popup {
+    display: none; /* Initially hide the popup */
+    position: fixed;
+    bottom: 20px;
+    right: -100%; /* Start position outside of the screen */
+    background-color: rgb(73, 73, 73);
+    color: #f1f1f1;
+    /* padding: 20px; */
+    /* border-radius: 5px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.5s ease-in-out;
+}
+.popup p {
+    padding: 0 10px;
+}
+
+.popup.show {
+    right: 20px; /* Final position when shown */
+}
+
+.slider {
+    width: 0%;
+    height: 3px;
+    background-color: #00ff6e;
+    /* margin-top: 10px; */
+    transition: width 3s linear;
+}
+
+.content {
+    padding: 10px;
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
